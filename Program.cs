@@ -6,6 +6,7 @@ namespace SayisalLoto
     {
         static void Main(string[] args)
         {
+            // Sayısal Loto Dizisi tanımlandı
             int[] sayisal = new int[6];
 
 
@@ -28,16 +29,11 @@ namespace SayisalLoto
                 }
             }
 
-            //for (int i = 0; i < tahminler.Length; i++)
-            //{
-            //    Console.Write("{0} ", tahminler[i]);
-            //}
             Console.WriteLine();
             SayisalLotoCek(sayisal);
 
             int tahminSayisi = TahminEt(sayisal, tahminler);
             Console.WriteLine("Doğru Bilme Sayiniz: " + tahminSayisi);
-
 
         }
 
@@ -63,6 +59,7 @@ namespace SayisalLoto
             }
         }
 
+        #region TahminEt
         static int TahminEt(int[] sayilar, int[] tahminler)
         {
             int tahminSayisi = 0;
@@ -78,6 +75,8 @@ namespace SayisalLoto
 
             return tahminSayisi;
         }
+        #endregion
+
 
 
     }
