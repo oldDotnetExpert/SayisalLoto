@@ -20,7 +20,7 @@ namespace SayisalLoto
                 tahmin = Int32.Parse(Console.ReadLine());
                 if (tahmin < 1 || tahmin > 49)
                 {
-                    Console.WriteLine("Lütfen 2 ile 49 arasında bir sayı giriniz");
+                    Console.WriteLine("Lütfen 1 ile 49 arasında bir sayı giriniz");
                     continue;
                 }
                 else
